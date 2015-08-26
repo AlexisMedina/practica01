@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
  
-  <title>Mi aplicacion</title>
+  <title>Ahorcado</title>
 
   <!--grupo CSS-->
   <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
@@ -26,18 +26,96 @@
  <!-- Principal -->
  <div data-role="page" id="principal" >   
   <div data-role="header">
-    <h1>Encabezado</h1>
+    <h1>Ahorcado</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-    <a href="#" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">click</a>
+  <div align="center">
+<div data-role="controlgroup" style="width:20%">
+<a href="#jugar" class="ui-btn ui-btn-corner-all ui-icon-check ui-btn-icon-right ">Jugar</a>
+     <a href="#opciones" class="ui-btn ui-btn-corner-all ui-icon-gear ui-btn-icon-right ">Opciones</a>
+     </div>
+</div>    
   </div>
 
-  <div data-role="footer">
-    <h1>Pie</h1>
-  </div>
  </div>  
  <!-- Principal -->
+ 
+<!-- Opciones -->
+ <div data-role="page" id="opciones" >   
+  <div data-role="header" data-add-back-btn="true">
+    <h1>Opciones</h1>
+    <a href="#principal" class="ui-btn-left" data-icon="home">Inicio</a>
+  </div>
 
+  <div data-role="main" class="ui-content" align="center">
+    <div align="center">
+<div data-role="controlgroup" style="width:20%">
+<a href="#puto" class="ui-btn ui-btn-corner-all ui-icon-audio ui-btn-icon-right" id=
+"btn_sonido">Sonido</a>
+     <a href="#vibra" class="ui-btn ui-btn-corner-all ui-icon-power ui-btn-icon-right" id="btn_vibrar">Vibrar</a>
+     </div>
+</div>    
+  </div>
+
+ </div>  
+ <!-- Opciones -->
+ 
+ <!-- Juego -->
+ <div data-role="page" id="jugar" >   
+  <div data-role="header">
+    <h1>Juego</h1>
+    <a href="#principal" class="ui-btn-left" data-icon="home">Inicio</a>
+  </div>
+
+  <div data-role="main" class="ui-content" align="center">
+    <a href="#esta" class="ui-btn ui-btn-corner-all ui-icon-check ui-btn-icon-right ui-btn-inline">Quieres jugar?</a>  
+    </div>
+
+ </div>  
+ <!-- Juego -->
+ 
+  <!-- Juego -->
+ <div data-role="page" id="esta" >   
+  <div data-role="header">
+    <h1>Juego</h1>
+    <a href="#principal" class="ui-btn-left" data-icon="home">Inicio</a>
+  </div>
+
+  <div data-role="main" class="ui-content" align="center">
+<h1> PUES JUEGAME ESTA </h1>
+    </div>
+
+ </div>  
+ <!-- Juego -->
+ 
+ <!-- Juego -->
+ <div data-role="page" id="puto" >   
+  <div data-role="header" data-add-back-btn="true">
+    <h1>Juego</h1>
+
+  </div>
+
+  <div data-role="main" class="ui-content" align="center">
+<h1> PUTO EL QUE LO LEA </h1>
+    </div>
+
+ </div>  
+ <!-- Juego -->
+ 
+ <!-- Juego -->
+ <div data-role="page" id="vibra" >   
+  <div data-role="header" data-add-back-btn="true">
+    <h1>Juego</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" align="center">
+<h1> Quieres un vibrador o que? </h1>
+    </div>
+
+ </div>  
+ <!-- Juego -->
+ 
+ 
  </body>
 </html> 
